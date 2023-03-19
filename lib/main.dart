@@ -1,4 +1,8 @@
+// ignore_for_file: unused_import
+
 import 'package:fashion_app/screen1.dart';
+import 'package:fashion_app/screen2.dart';
+import 'package:fashion_app/screen3.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +17,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fashion App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Ubuntu'),
       debugShowCheckedModeBanner: false,
-      home: const screen1(),
+      // ignore: prefer_const_constructors
+      home: screen3(),
     );
   }
 }
